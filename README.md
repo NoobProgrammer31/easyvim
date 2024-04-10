@@ -1,1 +1,1 @@
-# help me to make my Nvim Config Better, 
+# help me to make my Nvim Config Better
