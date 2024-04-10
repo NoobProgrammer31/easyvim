@@ -6,6 +6,7 @@ return {
 			require("mason").setup()
 		end,
 	},
+
 	{
 		"williamboman/mason-lspconfig.nvim",
 		lazy = false,
@@ -13,6 +14,7 @@ return {
 			auto_install = true,
 		},
 	},
+
 	{
 		"neovim/nvim-lspconfig",
 		lazy = false,
@@ -21,7 +23,15 @@ return {
 
 			local lspconfig = require("lspconfig")
 
-			lspconfig.pylsp.setup({
+			lspconfig.tsserver.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.bashls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
 
