@@ -27,6 +27,10 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.asm_lsp.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
 			})
