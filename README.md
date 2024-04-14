@@ -1,1 +1,1 @@
-# My Personal Nvim Config
+# help me to make my Nvim Config Better
